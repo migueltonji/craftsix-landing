@@ -163,13 +163,12 @@ body::before {
   position: relative;
 }
 
-
-
 .hero-card h1 {
   font-family: 'Anton', sans-serif;
   font-size: 3.9rem;
   line-height: 1.08;
   margin-bottom: 28px;
+  color: #ffffff;
 }
 
 .hero-title {
@@ -177,6 +176,9 @@ body::before {
   font-size: 3.8rem;
   line-height: 1.05;
   margin-bottom: 32px;
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.45),
+    0 0 35px rgba(81, 112, 255, 0.25);
 }
 
 .hero-title span {
@@ -187,8 +189,8 @@ body::before {
   font-weight: 400;
   letter-spacing: 0.5px;
   opacity: 0.85;
+  color: rgba(255, 255, 255, 0.85);
 }
-
 
 
 .hero-card p {
@@ -339,8 +341,26 @@ body::before {
     grid-template-columns: 1fr;
   }
 
+  .hero-card {
+    padding: 65px 30px;
+    width: 360px;
+    width: 100%;
+  
+  }
+
   .hero-card h1 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+  }
+
+  .hero-title span {
+    font-size: 2rem;
+  }
+
+  .hero-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 28ch;
+    margin-inline: auto;
   }
 
   .services h2 {
