@@ -32,6 +32,21 @@ O objetivo do projeto é comunicar valor de forma clara, minimalista e sofistica
 
 ---
 
+## 🔐 Segurança
+
+Este projeto adota boas práticas de segurança no frontend utilizando headers HTTP configurados via Vercel.
+
+### Medidas aplicadas:
+- Proteção contra MIME sniffing (`X-Content-Type-Options`)
+- Prevenção de clickjacking (`X-Frame-Options`)
+- Controle de informações de referrer (`Referrer-Policy`)
+- Bloqueio de APIs sensíveis do navegador (`Permissions-Policy`)
+- Forçamento de HTTPS com HSTS
+
+Essas medidas aumentam a segurança do site mesmo sendo uma aplicação estática, seguindo padrões utilizados em ambientes de produção.
+
+---
+
 ## 📐 Estrutura do Projeto
 
 ```text
@@ -41,4 +56,4 @@ O objetivo do projeto é comunicar valor de forma clara, minimalista e sofistica
 │   └── style.css
 ├── js/
 │   └── script.js
-└── assets/
+└── vercel.json
