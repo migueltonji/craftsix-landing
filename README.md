@@ -24,6 +24,14 @@ O objetivo do projeto é comunicar valor de forma clara, minimalista e sofistica
 
 ---
 
+
+## 🌐 Deploy
+
+- [Site CraftSix](https://craftsix-landing.vercel.app/)
+
+
+---
+
 ## 📐 Estrutura do Projeto
 
 ```text
